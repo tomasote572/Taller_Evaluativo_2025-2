@@ -72,10 +72,41 @@ Comenzaremos Con el diagrama de contexto:
   - ![img_3.png](img_3.png)
 
 5. Identificar criterios de aceptación y organizar el plan de trabajo con **Épicas**, **Features** y **Historias de Usuario (HU)**.
+- #### Épicas Principales
+    - Gestión Básica de Inventario - Funcionalidades principal del sistema
+    - Sistema de Notificaciones - Alertas y observadores de cambios
+    - Gestión de Errores - Validaciones y excepciones
+    - Interfaz de Usuario - Consola interactiva
+
+- #### Features
+    - 1 Crear productos
+    - 2 Consultar productos
+    - 3 Actualizar stock
+    - 4 Validar datos de productos
+    - 5 Registro de agentes notificadores
+    - 6 Notificaciones de cambios de stock
+    - 7 Alertas de stock bajo
+    - 8 Validación de stock negativo
+    - 9 Control de productos duplicados
+    - 10 Manejo de productos no encontrados
+    - 11 Menú de opciones
+    - 12 Entrada de datos por consola
+    - 13 Flujo completo de operaciones
+
+- #### Historias de Usuario (HU)
+    - Como usuario, quiero agregar un producto al inventario para que esté disponible para venta.
+    - Como usuario, quiero modificar la cantidad de un producto para reflejar ventas o reposición.
+    - Como usuario, quiero obtener los detalles de un producto específico para revisar información antes de vender o reponer.
+    - Como administrador, quiero registrar agentes para que reciban notificaciones cuando se agregue
+    - Como administrador, quiero que un agente genere advertencias cuando el stock de un producto
+  
 6. Usar **inyección de dependencias** para instanciar objetos.
+- 
 7. Implementar pruebas unitarias con **JUnit 5**.
 - ![img_2.png](img_2.png)
+- ![img_7.png](img_7.png)
 8. Integrar **JaCoCo** y **Sonar**, asegurando una cobertura mínima del **80%**.
+- ![img_6.png](img_6.png)
 9. Documentar evidencias del funcionamiento y explicar comandos Maven para correr el software.
 
 ---
