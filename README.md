@@ -21,8 +21,8 @@ Este repositorio implementa la solución al Taller Evaluativo siguiendo principi
 
 ### 1. Crear un repositorio en GitHub con un proyecto **Maven + Spring Boot** y su respectivo README.
 
-- ![img_1.png](img_1.png)
-- ![img.png](img.png)
+- ![img_1.png](docs/imagenes/img_1.png)
+- ![img.png](docs/imagenes/img.png)
 - Se puede evidenciar que el taller corre perfectamente con los parametros pedidos, se toma captura de los momentos
 mas relevantes del test corriendo de igual mandera al final del readme se deja los comandos para correrlo
 
@@ -72,13 +72,13 @@ su estado se modifica, sin que el sujeto necesite conocer información específi
 Comenzaremos Con el diagrama de contexto:
 
    - El cual es tiene que ser algo muy general pero que muestre los agentes que estan interactuando con el sistema
-   - ![img_4.png](img_4.png)
+   - ![img_4.png](docs/imagenes/img_4.png)
 - Diagrama de caso de uso:
   - El cual muestra el flujo que debe tener el sistema y los actores que interactuan con el
-  - ![img_5.png](img_5.png)
+  - ![img_5.png](docs/imagenes/img_5.png)
 - Diagrama de clases:
   -  Es el proceso de representar gráficamente las clases, sus atributos, métodos y las relaciones entre ellas.
-  - ![img_3.png](img_3.png)
+  - ![img_3.png](docs/imagenes/img_3.png)
   
 ----
 5. Identificar criterios de aceptación y organizar el plan de trabajo con **Épicas**, **Features** y **Historias de Usuario (HU)**.
@@ -117,28 +117,28 @@ Comenzaremos Con el diagrama de contexto:
 ----
 
 7. Implementar pruebas unitarias con **JUnit 5**.
-- ![img_2.png](img_2.png)
-- ![img_7.png](img_7.png)
+- ![img_2.png](docs/imagenes/img_2.png)
+- ![img_7.png](docs/imagenes/img_7.png)
 ------ 
 
 8. Integrar **JaCoCo** y **Sonar**, asegurando una cobertura mínima del **80%**.
-- ![img_6.png](img_6.png)
-- ![img_8.png](img_8.png)
+- ![img_6.png](docs/imagenes/img_6.png)
+- ![img_8.png](docs/imagenes/img_8.png)
 ----
 
 9. Documentar evidencias del funcionamiento y explicar comandos Maven para correr el software.
 - Hacemos el caso de prueba con el del documento el cual es un xbox one s con 10 unidades
 luego le quitamos 6 unidades y si quedan menos de 5 unidades el arroja la alerta como se ve en los 
 pantallazos.
-  - ![img_9.png](img_9.png)
-  - ![img_10.png](img_10.png)
+  - ![img_9.png](docs/imagenes/img_9.png)
+  - ![img_10.png](docs/imagenes/img_10.png)
 Ahora unos pantallazos de todo el funcionamiento donde se ve el jacoco, junit y sonar.
-  - ![img_11.png](img_11.png)
-  - ![img_12.png](img_12.png)
-  - ![img_13.png](img_13.png)
-  - ![img_14.png](img_14.png)
-  - ![img_15.png](img_15.png)
-  - ![img_16.png](img_16.png)
+  - ![img_11.png](docs/imagenes/img_11.png)
+  - ![img_12.png](docs/imagenes/img_12.png)
+  - ![img_13.png](docs/imagenes/img_13.png)
+  - ![img_14.png](docs/imagenes/img_14.png)
+  - ![img_15.png](docs/imagenes/img_15.png)
+  - ![img_16.png](docs/imagenes/img_16.png)
 - #### Nota: importante si quieres correr todo el test para probarlo con el comando mvn clean test y se reflejara los pantallazos anteriores
 
 ## 🚀 Comandos básicos
