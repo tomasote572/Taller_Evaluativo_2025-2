@@ -79,6 +79,8 @@ Comenzaremos Con el diagrama de contexto:
 9. Documentar evidencias del funcionamiento y explicar comandos Maven para correr el software.
 
 ---
+
+
 ## ⚙️ Requisitos del entorno
 
 - **Java JDK 17**
