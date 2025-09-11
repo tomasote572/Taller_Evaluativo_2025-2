@@ -7,6 +7,15 @@ Este repositorio implementa la solución al Taller Evaluativo siguiendo principi
 
 - Tomas Felipe Ramirez Alvarez
 
+## ⚙️ Requisitos del entorno
+
+- **Java JDK 17**
+- **Apache Maven 3.9.x**
+- **Spring Boot 3.3.3**
+- **JUnit 5**
+- **JaCoCo** (plugin Maven)
+- **SonarQube / SonarCloud**
+
 -------------------------------------------------------------------------------------
 ## 📖 Descripción del taller
 
@@ -43,7 +52,7 @@ ServicioInventario no depende de implementaciones concretas (AgenteLog,AgenteAdv
 ### 3. Implementar al menos un **patrón de diseño** y explicar su selección.
 #### Se implementó el Patrón Observer (u Observador).
 
--Es un modelo de diseño que facilita que un objeto (sujeto) informe automáticamente a otros objetos (seguidores) cuando 
+- Es un modelo de diseño que facilita que un objeto (sujeto) informe automáticamente a otros objetos (seguidores) cuando 
 su estado se modifica, sin que el sujeto necesite conocer información específica sobre los seguidores.
 
 - Sujeto (Subject): ServicioInventario
@@ -70,7 +79,8 @@ Comenzaremos Con el diagrama de contexto:
 - Diagrama de clases:
   -  Es el proceso de representar gráficamente las clases, sus atributos, métodos y las relaciones entre ellas.
   - ![img_3.png](img_3.png)
-
+  
+----
 5. Identificar criterios de aceptación y organizar el plan de trabajo con **Épicas**, **Features** y **Historias de Usuario (HU)**.
 - #### Épicas Principales
     - Gestión Básica de Inventario - Funcionalidades principal del sistema
@@ -99,36 +109,40 @@ Comenzaremos Con el diagrama de contexto:
     - Como usuario, quiero obtener los detalles de un producto específico para revisar información antes de vender o reponer.
     - Como administrador, quiero registrar agentes para que reciban notificaciones cuando se agregue
     - Como administrador, quiero que un agente genere advertencias cuando el stock de un producto
-  
+-----
 6. Usar **inyección de dependencias** para instanciar objetos.
    - Para que haya inyeccion de dependencias se uso spring boot y sus anotaciones con el fin de que spring se encargue de 
    manejar las dependencias y que las clases no tenga esa responsabilidad con eso cada clase hace lo que tiene que hacer sin
    interrumpir el flujo de la aplicacion.
+----
 
 7. Implementar pruebas unitarias con **JUnit 5**.
 - ![img_2.png](img_2.png)
 - ![img_7.png](img_7.png)
+------ 
+
 8. Integrar **JaCoCo** y **Sonar**, asegurando una cobertura mínima del **80%**.
 - ![img_6.png](img_6.png)
+- ![img_8.png](img_8.png)
+----
+
 9. Documentar evidencias del funcionamiento y explicar comandos Maven para correr el software.
+- Hacemos el caso de prueba con el del documento el cual es un xbox one s con 10 unidades
+luego le quitamos 6 unidades y si quedan menos de 5 unidades el arroja la alerta como se ve en los 
+pantallazos.
+  - ![img_9.png](img_9.png)
+  - ![img_10.png](img_10.png)
+Ahora unos pantallazos de todo el funcionamiento donde se ve el jacoco, junit y sonar.
+  - ![img_11.png](img_11.png)
+  - ![img_12.png](img_12.png)
+  - ![img_13.png](img_13.png)
+  - ![img_14.png](img_14.png)
+  - ![img_15.png](img_15.png)
+  - ![img_16.png](img_16.png)
+- #### Nota: importante si quieres correr todo el test para probarlo con el comando mvn clean test y se reflejara los pantallazos anteriores
 
----
-
-## ⚙️ Requisitos del entorno
-
-- **Java JDK 17**
-- **Apache Maven 3.9.x**
-- **Spring Boot 3.3.3**
-- **JUnit 5** 
-- **JaCoCo** (plugin Maven)
-- **SonarQube / SonarCloud**
-
----
-
-## 🚀 Comandos básicos 
-
-se agrega una selecion por estetica y funcionalidad
-
+## 🚀 Comandos básicos
+- Comandos para instalar, compilar, testear y ejecutar la aplicación:
 ```bash
 # Verificar instalación
 mvn -v
