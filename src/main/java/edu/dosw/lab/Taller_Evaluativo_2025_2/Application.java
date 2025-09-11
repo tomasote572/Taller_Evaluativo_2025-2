@@ -1,6 +1,6 @@
 package edu.dosw.lab.Taller_Evaluativo_2025_2;
 
-import ejecicio.MainConsola;
+import edu.dosw.lab.Taller_Evaluativo_2025_2.ejecicio.MainConsola;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

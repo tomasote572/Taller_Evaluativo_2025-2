@@ -60,12 +60,21 @@ su estado se modifica, sin que el sujeto necesite conocer información específi
 -----
 
 4. Incluir diagramas de **Contexto**, **Casos de uso** y **Clases**.
-- 
+Comenzaremos Con el diagrama de contexto:
 
+   - El cual es tiene que ser algo muy general pero que muestre los agentes que estan interactuando con el sistema
+   - ![img_4.png](img_4.png)
+- Diagrama de caso de uso:
+  - El cual muestra el flujo que debe tener el sistema y los actores que interactuan con el
+  - ![img_5.png](img_5.png)
+- Diagrama de clases:
+  -  Es el proceso de representar gráficamente las clases, sus atributos, métodos y las relaciones entre ellas.
+  - ![img_3.png](img_3.png)
 
 5. Identificar criterios de aceptación y organizar el plan de trabajo con **Épicas**, **Features** y **Historias de Usuario (HU)**.
 6. Usar **inyección de dependencias** para instanciar objetos.
 7. Implementar pruebas unitarias con **JUnit 5**.
+- ![img_2.png](img_2.png)
 8. Integrar **JaCoCo** y **Sonar**, asegurando una cobertura mínima del **80%**.
 9. Documentar evidencias del funcionamiento y explicar comandos Maven para correr el software.
 

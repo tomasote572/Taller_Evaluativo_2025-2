@@ -1,20 +1,29 @@
-package ejecicio;
+package edu.dosw.lab.Taller_Evaluativo_2025_2.ejecicio;
 
 import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Clase principal para la interacción con el usuario a través de la consola.
+ * Permite agregar productos, modificar el stock y salir del programa mediante un menú simple.
+ * Utiliza la clase ServicioInventario para gestionar los productos y notificar a los agentes registrados.
+ */
 public class MainConsola {
 
     private static final Logger logger = LoggerFactory.getLogger(MainConsola.class);
 
+    /**
+     * Inicia el menú de la aplicación en consola.
+     * Registra agentes para la notificación de cambios en el inventario.
+     * Permite al usuario realizar operaciones como agregar productos y modificar el stock.
+     * Finaliza cuando el usuario selecciona la opción de salir.
+     */
     public static void iniciar() {
         ServicioInventario servicio = new ServicioInventario();
         servicio.registrarAgente(new Agentes.AgenteLog());
         servicio.registrarAgente(new Agentes.AgenteAdvertencia());
-
         Scanner sc = new Scanner(System.in);
-
         while (true) {
             logger.info("\n--- MENÚ ---");
             logger.info("1. Agregar producto");
