@@ -101,7 +101,10 @@ Comenzaremos Con el diagrama de contexto:
     - Como administrador, quiero que un agente genere advertencias cuando el stock de un producto
   
 6. Usar **inyección de dependencias** para instanciar objetos.
-- 
+- Para que haya inyeccion de dependencias se uso spring boot y sus anotaciones con el fin de que spring se encargue de 
+manejar las dependencias y que las clases no tenga esa responsabilidad con eso cada clase hace lo que tiene que hacer sin
+interrumpir el flujo de la aplicacion.
+
 7. Implementar pruebas unitarias con **JUnit 5**.
 - ![img_2.png](img_2.png)
 - ![img_7.png](img_7.png)

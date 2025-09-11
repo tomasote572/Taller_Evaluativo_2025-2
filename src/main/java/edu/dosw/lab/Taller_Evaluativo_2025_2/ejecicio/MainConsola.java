@@ -12,6 +12,15 @@ import org.slf4j.LoggerFactory;
 public class MainConsola {
 
     private static final Logger logger = LoggerFactory.getLogger(MainConsola.class);
+    private final ServicioInventario servicio;
+
+    /**
+     * Constructor que inicializa el servicio de inventario.
+     * @param servicio Instancia del servicio de inventario a utilizar
+     */
+    public MainConsola(ServicioInventario servicio) {
+        this.servicio = servicio;
+    }
 
     /**
      * Inicia el menú de la aplicación en consola.
