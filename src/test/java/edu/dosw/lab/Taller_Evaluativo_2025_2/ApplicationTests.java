@@ -229,7 +229,6 @@ class ApplicationTests {
 
     @Test
     void testMainConsolaSalirInmediato() {
-        // Simula: usuario presiona 0 para salir
         String input = "0\n";
         InputStream originalIn = System.in;
         try {
@@ -242,7 +241,6 @@ class ApplicationTests {
 
     @Test
     void testMainConsolaAgregarProducto() {
-        // Usar ENTERO para el precio para evitar problemas de decimales
         String input = "1\nTeclado\n25\n10\nPerifericos\n0\n";
         InputStream originalIn = System.in;
         try {
@@ -255,7 +253,6 @@ class ApplicationTests {
 
     @Test
     void testMainConsolaModificarStock() {
-        // Usar enteros para evitar problemas de locale con decimales
         String input = "1\nMouse\n15\n20\nPerifericos\n2\nMouse\n5\n0\n";
         InputStream originalIn = System.in;
         try {
@@ -268,7 +265,6 @@ class ApplicationTests {
 
     @Test
     void testMainConsolaOpcionInvalida() {
-        // Simula: opción inválida y luego salir
         String input = "999\n0\n";
         InputStream originalIn = System.in;
         try {
@@ -293,7 +289,6 @@ class ApplicationTests {
 
     @Test
     void testMainConsolaAgregarProductoConEnteros() {
-        // Usar números enteros para evitar problemas con decimales
         String input = "1\nTeclado\n25\n10\nPerifericos\n0\n";
         InputStream originalIn = System.in;
         try {
