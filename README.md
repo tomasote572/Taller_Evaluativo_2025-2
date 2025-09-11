@@ -56,6 +56,7 @@ su estado se modifica, sin que el sujeto necesite conocer información específi
 - Porque existía una situación (cambio de inventario) que necesitaba ser comunicada a varios interesados (agentes).
   Facilita la inclusión de más agentes más adelante sin modificar la lógica principal.
   Se adapta idealmente a la necesidad de “informar a los interesados”.
+
 -----
 
 4. Incluir diagramas de **Contexto**, **Casos de uso** y **Clases**.
