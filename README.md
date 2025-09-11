@@ -71,6 +71,7 @@ su estado se modifica, sin que el sujeto necesite conocer información específi
 
 ---
 
+
 ## ⚙️ Requisitos del entorno
 
 - **Java JDK 17**
