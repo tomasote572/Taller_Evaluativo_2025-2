@@ -80,7 +80,6 @@ Comenzaremos Con el diagrama de contexto:
 
 ---
 
-
 ## ⚙️ Requisitos del entorno
 
 - **Java JDK 17**
