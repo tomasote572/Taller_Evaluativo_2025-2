@@ -124,6 +124,7 @@ Comenzaremos Con el diagrama de contexto:
 8. Integrar **JaCoCo** y **Sonar**, asegurando una cobertura mínima del **80%**.
 - ![img_6.png](docs/imagenes/img_6.png)
 - ![img_8.png](docs/imagenes/img_8.png)
+- ![img.png](docs/imagenes/img_17.png)
 ----
 
 9. Documentar evidencias del funcionamiento y explicar comandos Maven para correr el software.
@@ -159,4 +160,7 @@ mvn clean test
 
 # Arrancar aplicación
 mvn spring-boot:run
+
+# Mirar el sonar
+http://localhost:9000
 

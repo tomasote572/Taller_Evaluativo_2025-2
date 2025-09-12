@@ -20,22 +20,20 @@
 
     <properties>
         <java.version>17</java.version>
+        <!-- Configuración Sonar -->
+        <sonar.projectKey>Taller_Evaluativo_2025-2</sonar.projectKey>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.token>squ_0f14fcfd889850aa719af84666aa6b3d7404a7a2</sonar.token>
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Starter -->
+        <!-- Spring Boot starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <!-- Logging con SLF4J/Logback (ya viene por default en Spring Boot) -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-logging</artifactId>
-        </dependency>
-
-        <!-- Test -->
+        <!-- Spring Boot Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -45,19 +43,20 @@
 
     <build>
         <plugins>
-            <!-- Plugin de Spring Boot -->
+            <!-- Plugin Spring Boot -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- Plugin JaCoCo para cobertura -->
+            <!-- JaCoCo -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.12</version>
                 <executions>
                     <execution>
+                        <id>prepare-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
@@ -70,6 +69,13 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <!-- SonarQube -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.10.0.2594</version>
             </plugin>
         </plugins>
     </build>
